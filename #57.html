@@ -1,0 +1,30 @@
+<!--
+- Confeccionar una función que obtenga y retorne el mayor valor de una lista de enteros que le pasamos como parámetros.
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function nummayor(){
+    var may=arguments[0];
+    var f;
+    for(f=1;f<arguments.length;f++){
+      if (arguments[f]>may){
+        may=arguments[f];
+      }
+    }
+    return may;
+  }
+  document.write(nummayor(24,2,26,87,20,89,102));
+</script>
+  
+</body>
+</html>
+
+
